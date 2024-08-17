@@ -12,14 +12,15 @@
 static OS_TCB				carroTransversalTaskTCB;
 static CPU_STK          	carroTransversalStk[CARRO_TRANSVERSAL_TASK_STK_SIZE];
 
-static int8_t				bobinaTick = 0;
-static int8_t				carroTransversalTick = 0;
+static int8_t				bobinaTick;
+static int8_t				carroTransversalTick;
 
-static bool					carroTransversalAndar = false;
+static bool					carroTransversalAndar;
 
 /* Functions prototypes ------------------------------------------------------*/
-static void carroTransversalCtrl(CARRO_TRANSVERSAL_CTRL ctrl);
 static void carroTransversalHome(void);
+static void carroTransversalDir(CARRO_TRANSVERSAL_DIR ctrl);
+static void carroTransversalSetDuty(float duty); /* duty -> 0 a 1.0 */
 
 /* Interrupções --------------------------------------------------------------*/
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
@@ -66,6 +67,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 		case OPTO_3_Pin:
 			carroTransversalTick++;
 
+			/* Assim que deu uma volta no eixo do carro transversal, mande o carro parar */
 			if (carroTransversalTick > CARRO_TRANSVERSAL_TICK_VOLTA) {
 				carroTransversalTick = 0;
 				carroTransversalAndar = false;
@@ -87,17 +89,19 @@ static void carroTransversalTask(void *p_arg)
 
 	(void)p_arg;
 
+	/* PWM de controle da velocidade do carro transversal */
 	HAL_TIM_PWM_Start(&htim1, MOTOR_CARRO_TRANSVERSAL_PWM_Channel);
 
 	/* Trás o carro transversal para posição inicial */
 	carroTransversalHome();
+	carroTransversalSetDuty(0.0);
 
 	bobinaTick = 0;
 	carroTransversalTick = 0;
 	carroTransversalAndar = false;
 
 	OS_FLAGS comandoPrev = MOTOR_BOBINA_LIBERANDO;
-	CARRO_TRANSVERSAL_CTRL carroCtrl = PARADO;
+	CARRO_TRANSVERSAL_DIR carroDir = PARADO;
 
 	/* Infinite loop */
 	while (DEF_TRUE) {
@@ -112,36 +116,51 @@ static void carroTransversalTask(void *p_arg)
 				);
 
 		while (carroTransversalAndar) {
-			bool fimCurso_1 = HAL_GPIO_ReadPin(FIM_CURSO_1_GPIO_Port, FIM_CURSO_1_Pin);
-			bool fimCurso_2 = HAL_GPIO_ReadPin(FIM_CURSO_2_GPIO_Port, FIM_CURSO_2_Pin);
+			GPIO_PinState fimCurso_1 = HAL_GPIO_ReadPin(FIM_CURSO_1_GPIO_Port, FIM_CURSO_1_Pin);
+			GPIO_PinState fimCurso_2 = HAL_GPIO_ReadPin(FIM_CURSO_2_GPIO_Port, FIM_CURSO_2_Pin);
 
-			if (fimCurso_1 && fimCurso_2) { /* Ambas fim de cursos acionado -> impossível */
-				carroTransversalAndar = false;
-				carroCtrl = PARADO;
-			}
-			else if (fimCurso_1) {
-				carroCtrl = DIREITA;
-			}
-			else if (fimCurso_2) {
-				carroCtrl = ESQUERDA;
+			/*
+			 * Para evitar que o carro passe do ponto
+			 * Quando o passo atinge o valor 14, desacelera até linearmente 40% de duty
+			 * 40% para evitar que o carro trave sem conseguir andar
+			 */
+			if (carroTransversalTick < 14) {
+				carroTransversalSetDuty(1.0);
 			}
 			else {
+				carroTransversalSetDuty(1.0 - 0.1*(carroTransversalTick - 14));
+			}
+
+			if ((fimCurso_1 == GPIO_PIN_SET) && (fimCurso_2 == GPIO_PIN_SET)) { /* Ambas fim de cursos acionado -> impossível */
+				carroTransversalAndar = 0;
+				carroDir = PARADO;
+			}
+			else if (fimCurso_1 == GPIO_PIN_SET) {
+				carroDir = DIREITA;
+			}
+			else if (fimCurso_2 == GPIO_PIN_SET) {
+				carroDir = ESQUERDA;
+			}
+			else {
+				/* A bobina mudou de direção? -> Sim, também mude o carro */
 				if (comando != comandoPrev) {
 					comandoPrev = comando;
 
-					if (carroCtrl == ESQUERDA) {
-						carroCtrl = DIREITA;
+					if (carroDir == ESQUERDA) {
+						carroDir = DIREITA;
 					}
 					else {
-						carroCtrl = ESQUERDA;
+						carroDir = ESQUERDA;
 					}
 				}
 			}
 
-			carroTransversalCtrl(carroCtrl);
+			carroTransversalDir(carroDir);
 		}
 
-		carroTransversalCtrl(PARADO);
+		/* Freia e para o carro */
+		carroTransversalSetDuty(1.0);
+		carroTransversalDir(FREIO);
 	}
 }
 
@@ -171,7 +190,23 @@ void carroTransversalCreateTask(void)
 	}
 }
 
-static void carroTransversalCtrl(CARRO_TRANSVERSAL_CTRL ctrl)
+static void carroTransversalHome(void)
+{
+	#define HOME_TIMEOUT	25000000
+
+	uint32_t homeTimeout = HOME_TIMEOUT;
+
+	while (homeTimeout > 0 && (HAL_GPIO_ReadPin(FIM_CURSO_2_GPIO_Port, FIM_CURSO_2_Pin) == GPIO_PIN_RESET)) {
+		carroTransversalDir(DIREITA);
+		carroTransversalSetDuty(1.0);
+		homeTimeout--;
+	}
+
+	carroTransversalDir(PARADO);
+	carroTransversalSetDuty(0.0);
+}
+
+static void carroTransversalDir(CARRO_TRANSVERSAL_DIR ctrl)
 {
 	switch(ctrl) {
 		case ESQUERDA:
@@ -184,6 +219,11 @@ static void carroTransversalCtrl(CARRO_TRANSVERSAL_CTRL ctrl)
 			HAL_GPIO_WritePin(MOTOR_CARRO_TRANSVERSAL_DIR2_GPIO_Port, MOTOR_CARRO_TRANSVERSAL_DIR2_Pin, GPIO_PIN_SET);
 			break;
 
+		case FREIO:
+			HAL_GPIO_WritePin(MOTOR_CARRO_TRANSVERSAL_DIR1_GPIO_Port, MOTOR_CARRO_TRANSVERSAL_DIR1_Pin, GPIO_PIN_SET);
+			HAL_GPIO_WritePin(MOTOR_CARRO_TRANSVERSAL_DIR2_GPIO_Port, MOTOR_CARRO_TRANSVERSAL_DIR2_Pin, GPIO_PIN_SET);
+			break;
+
 		case PARADO:
 		default:
 			HAL_GPIO_WritePin(MOTOR_CARRO_TRANSVERSAL_DIR1_GPIO_Port, MOTOR_CARRO_TRANSVERSAL_DIR1_Pin, GPIO_PIN_RESET);
@@ -192,16 +232,15 @@ static void carroTransversalCtrl(CARRO_TRANSVERSAL_CTRL ctrl)
 	}
 }
 
-static void carroTransversalHome(void)
+static void carroTransversalSetDuty(float duty)
 {
-	#define HOME_TIMEOUT	25000000
-
-	uint32_t homeTimeout = HOME_TIMEOUT;
-
-	while (homeTimeout > 0 && (HAL_GPIO_ReadPin(FIM_CURSO_2_GPIO_Port, FIM_CURSO_2_Pin) == GPIO_PIN_RESET)) {
-		carroTransversalCtrl(DIREITA);
-		homeTimeout--;
+	if (duty > 0 && duty < 1) {
+		MOTOR_CARRO_TRANSVERSAL_PWM_TIM->CCR4 = (uint32_t) (((float) MOTOR_CARRO_TRANSVERSAL_PWM_TIM->ARR) * duty);
 	}
-
-	carroTransversalCtrl(PARADO);
+	else if (duty < 0) {
+		MOTOR_CARRO_TRANSVERSAL_PWM_TIM->CCR4 = 0;
+	}
+	else {
+		MOTOR_CARRO_TRANSVERSAL_PWM_TIM->CCR4 = MOTOR_CARRO_TRANSVERSAL_PWM_TIM->ARR;
+	}
 }

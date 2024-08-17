@@ -72,8 +72,8 @@ all: main-build
 main-build: Controle_Cabo.elf secondary-outputs
 
 # Tool invocations
-Controle_Cabo.elf Controle_Cabo.map: $(OBJS) $(USER_OBJS) C:\Users\borto\Documents\GitHub\Controle_Cabo_v2\Controle_Cabo\System\STM32F439ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Controle_Cabo.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\borto\Documents\GitHub\Controle_Cabo_v2\Controle_Cabo\System\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Controle_Cabo.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Controle_Cabo.elf Controle_Cabo.map: $(OBJS) $(USER_OBJS) C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo\System\STM32F439ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Controle_Cabo.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo\System\STM32F439ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Controle_Cabo.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

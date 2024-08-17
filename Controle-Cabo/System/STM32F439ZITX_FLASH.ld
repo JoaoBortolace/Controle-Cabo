@@ -46,13 +46,24 @@ _Min_Stack_Size = 0x400; /* required amount of stack */
 MEMORY
 {
   CCMRAM    (xrw)    : ORIGIN = 0x10000000,   LENGTH = 64K
-  RAM    (xrw)    : ORIGIN = 0x20000000,   LENGTH = 192K
-  FLASH    (rx)    : ORIGIN = 0x8000000,   LENGTH = 2048K
+  RAM       (xrw)    : ORIGIN = 0x20000000,   LENGTH = 192K
+  FLASH     (rx)     : ORIGIN = 0x8000000,    LENGTH = 1920K /* origin size was 2048k, subtracted size of DATA */
+  DATA      (rwx)    : ORIGIN = 0x81E0000, 	  LENGTH = 128k
 }
 
 /* Sections */
 SECTIONS
 {
+  /* User data section at the end of the flash to store calibration data etc. */
+  .user_data(NOLOAD) :
+  {
+    . = ALIGN(4);
+      _user_data_start = .; /* create a global symbol at user_data start */
+     KEEP(*(.user_data))
+    . = ALIGN(4);
+      _user_data_end = .;  /* create a global symbol at user_data end */
+  } > DATA
+  
   /* The startup code into "FLASH" Rom type memory */
   .isr_vector :
   {

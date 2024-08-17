@@ -1,6 +1,7 @@
 "./App/Config/os_app_hooks.o"
 "./App/Src/bobina.o"
 "./App/Src/carroTransversal.o"
+"./App/Src/flash.o"
 "./App/Src/main.o"
 "./App/Src/perifericos.o"
 "./App/Src/stm32f4xx_hal_msp.o"

@@ -35,10 +35,11 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
 /* Task ----------------------------------------------------------------------*/
 static void motorBobinaTask(void *p_arg)
 {
-	#define ERRO_DEATHZONE			(50U)
+	#define ERRO_DEATHZONE			(25U)
 	#define DAC_RES					(12)
 	#define DAC_MAX					((1<<12) - 1)
 	#define FREQUENCIA_AMOSTRAGEM	(6400.0)
+	#define ADC_REF_STD				(2048u)
 
 	OS_ERR err;
 	CPU_TS ts;
@@ -51,7 +52,12 @@ static void motorBobinaTask(void *p_arg)
 	HAL_TIM_Base_Start(&htim2); /* 6.4 kHz */
 
 	int32_t kp = 15;
-	int32_t motorBobinaTensaoRef = 2048;
+	int32_t motorBobinaTensaoRef;
+
+	/* Lê o valor salvo na flash da referência */
+	if (Read_HALFWORD_Config(0, (uint16_t *) &motorBobinaTensaoRef) != FLASH_OK) {
+		motorBobinaTensaoRef = ADC_REF_STD;
+	}
 
 	/* Infinite loop */
 	while (DEF_TRUE) {
@@ -68,11 +74,11 @@ static void motorBobinaTask(void *p_arg)
 
 		/* Desliga o motor caso pressionado o switch e também aplica uma zona morta */
 		if (abs(erro) <= ERRO_DEATHZONE || (HAL_GPIO_ReadPin(SW3_GPIO_Port, SW3_Pin) == SW_ON)) {
-			HAL_GPIO_WritePin(MOTOR_BOBINA_EN_GPIO_Port, MOTOR_BOBINA_EN_Pin, MOTOR_BOBINA_EN_OFF);
+			HAL_GPIO_WritePin(MOTOR_BOBINA_EN_GPIO_Port, MOTOR_BOBINA_EN_Pin, GPIO_PIN_RESET);
 			erro = 0;
 		}
 		else {
-			HAL_GPIO_WritePin(MOTOR_BOBINA_EN_GPIO_Port, MOTOR_BOBINA_EN_Pin, MOTOR_BOBINA_EN_ON);
+			HAL_GPIO_WritePin(MOTOR_BOBINA_EN_GPIO_Port, MOTOR_BOBINA_EN_Pin, GPIO_PIN_SET);
 			erro = (erro >= 0 ? erro - ERRO_DEATHZONE : erro + ERRO_DEATHZONE); /* Retira o degrau devido a zona morta */
 		}
 
@@ -85,10 +91,10 @@ static void motorBobinaTask(void *p_arg)
 
 		/* Caso o valor seja positivo, seta a direção CLOCK_WISE */
 		if (controle >= 0) {
-			HAL_GPIO_WritePin(MOTOR_BOBINA_DIR_GPIO_Port, MOTOR_BOBINA_DIR_Pin, MOTOR_BOBINA_CLOCKWISE);
+			HAL_GPIO_WritePin(MOTOR_BOBINA_DIR_GPIO_Port, MOTOR_BOBINA_DIR_Pin, GPIO_PIN_SET);
 		}
 		else {
-			HAL_GPIO_WritePin(MOTOR_BOBINA_DIR_GPIO_Port, MOTOR_BOBINA_DIR_Pin, MOTOR_BOBINA_COUNTER_CLOCKWISE);
+			HAL_GPIO_WritePin(MOTOR_BOBINA_DIR_GPIO_Port, MOTOR_BOBINA_DIR_Pin, GPIO_PIN_RESET);
 		}
 
 		/* Ajuste do ponto de referência */

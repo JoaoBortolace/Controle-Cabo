@@ -9,8 +9,7 @@
 #include "main.h"
 
 /* Variáveis Privadas --------------------------------------------------------*/
-OS_FLAG_GRP flagsGrp;
-OS_Q		AppQ;
+OS_FLAG_GRP 				flagsGrp;
 
 static OS_TCB				programStartTaskTCB;
 static CPU_STK          	programStartTaskStk[PROGRAM_START_TASK_STK_SIZE];
@@ -83,6 +82,7 @@ int main(void)
 	return 0;
 }
 
+/* Task ----------------------------------------------------------------------*/
 static void programStartTask(void *p_arg)
 {
 	OS_ERR err;
@@ -112,33 +112,16 @@ static void programStartTask(void *p_arg)
 	}
 }
 
-
-
-/**
-  * @brief  This function is executed in case of error occurrence.
-  * @retval None
-  */
+/* Error ---------------------------------------------------------------------*/
 void Error_Handler(void)
 {
-  /* User can add his own implementation to report the HAL error return state */
-  __disable_irq();
-  while (1) {
-      ;;
-  }
-}
+	/* User can add his own implementation to report the HAL error return state */
+	__disable_irq();
 
-#ifdef  USE_FULL_ASSERT
-/**
-  * @brief  Reports the name of the source file and the source line number
-  *         where the assert_param error has occurred.
-  * @param  file: pointer to the source file name
-  * @param  line: assert_param error line source number
-  * @retval None
-  */
-void assert_failed(uint8_t *file, uint32_t line)
-{
-  /* User can add his own implementation to report the file name and line number,
-     ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
-  /* USER CODE END 6 */
+	HAL_GPIO_WritePin(LED_ERRO_GPIO_Port, LED_ERRO_Pin, LED_ON);
+	HAL_PWR_EnterSTOPMode(PWR_LOWPOWERREGULATOR_ON, PWR_STOPENTRY_WFI);
+
+	while (1) {
+		__WFI();
+	}
 }
-#endif /* USE_FULL_ASSERT */

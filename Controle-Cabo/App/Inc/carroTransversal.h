@@ -18,9 +18,6 @@ extern "C"
 #include "main.h"
 
 /* Private define ------------------------------------------------------------*/
-#define CARRO_TRANSVERSAL_TASK_PRIO            	(PROGRAM_START_TASK_PRIO - 1)
-#define CARRO_TRANSVERSAL_TASK_STK_SIZE         (256u)
-
 #define BOBINA_TICK_VOLTA						(8u)
 #define CARRO_TRANSVERSAL_TICK_VOLTA			(20u)
 
@@ -28,8 +25,9 @@ extern "C"
 typedef enum {
 	ESQUERDA = 0,
 	DIREITA,
+	FREIO,
 	PARADO,
-} CARRO_TRANSVERSAL_CTRL;
+} CARRO_TRANSVERSAL_DIR;
 
 /* Exported functions prototypes ---------------------------------------------*/
 void carroTransversalCreateTask(void);
