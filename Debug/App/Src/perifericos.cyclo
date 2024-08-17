@@ -1,0 +1,7 @@
+../App/Src/perifericos.c:27:6:SystemClock_Config	3
+../App/Src/perifericos.c:72:6:MX_ADC2_Init	3
+../App/Src/perifericos.c:134:6:MX_DAC_Init	4
+../App/Src/perifericos.c:181:6:MX_TIM1_Init	7
+../App/Src/perifericos.c:255:6:MX_TIM2_Init	4
+../App/Src/perifericos.c:298:6:MX_DMA_Init	1
+../App/Src/perifericos.c:317:6:MX_GPIO_Init	1

@@ -1,0 +1,3 @@
+../App/Src/carroTransversal.c:82:13:carroTransversalTask	12
+../App/Src/carroTransversal.c:25:6:HAL_GPIO_EXTI_Callback	9
+../App/Src/carroTransversal.c:149:6:carroTransversalCreateTask	2

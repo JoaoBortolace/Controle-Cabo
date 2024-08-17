@@ -1,0 +1,8 @@
+../App/Src/stm32f4xx_hal_msp.c:71:6:HAL_MspInit	1
+../App/Src/stm32f4xx_hal_msp.c:94:6:HAL_ADC_MspInit	3
+../App/Src/stm32f4xx_hal_msp.c:154:6:HAL_ADC_MspDeInit	2
+../App/Src/stm32f4xx_hal_msp.c:187:6:HAL_DAC_MspInit	4
+../App/Src/stm32f4xx_hal_msp.c:259:6:HAL_DAC_MspDeInit	2
+../App/Src/stm32f4xx_hal_msp.c:291:6:HAL_TIM_Base_MspInit	3
+../App/Src/stm32f4xx_hal_msp.c:318:6:HAL_TIM_MspPostInit	2
+../App/Src/stm32f4xx_hal_msp.c:350:6:HAL_TIM_Base_MspDeInit	3

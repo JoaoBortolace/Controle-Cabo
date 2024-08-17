@@ -1,0 +1,3 @@
+../App/Src/bobina.c:21:6:HAL_ADC_ConvCpltCallback	2
+../App/Src/bobina.c:37:13:motorBobinaTask	6
+../App/Src/bobina.c:103:6:motorBobinaCreateTask	2
