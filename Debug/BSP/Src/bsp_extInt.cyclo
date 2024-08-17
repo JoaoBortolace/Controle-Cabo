@@ -1,3 +1,0 @@
-../BSP/Src/bsp_extInt.c:79:6:BSP_EXTI_Init	32
-../BSP/Src/bsp_extInt.c:309:6:EXTI3_IRQHandler	3
-../BSP/Src/bsp_extInt.c:372:6:EXTI15_10_IRQHandler	7

@@ -1,3 +1,0 @@
-../Core/Src/motor_bobina.c:88:13:MOTOR_BOBINA_SET_REF_Interruption	2
-../Core/Src/motor_bobina.c:43:13:Potenciometro_Tensao_Interruption	6
-../Core/Src/motor_bobina.c:96:6:Motor_Bobina_Init	2

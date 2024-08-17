@@ -1,5 +1,0 @@
-../BSP/Src/bsp_dac.c:12:6:BSP_DAC_Init	5
-../BSP/Src/bsp_dac.c:59:6:BSP_DAC_SetValue	4
-../BSP/Src/bsp_dac.c:78:6:BSP_DAC_SetValueDualChannel	4
-../BSP/Src/bsp_dac.c:97:6:BSP_DAC_PutValue	1
-../BSP/Src/bsp_dac.c:103:10:BSP_DAC_GetValue	3
