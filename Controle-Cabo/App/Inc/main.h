@@ -30,7 +30,7 @@ extern "C"
 
 
 /* Exported variables --------------------------------------------------------*/
-extern OS_FLAG_GRP flagsGrp;
+extern volatile OS_FLAG_GRP flagsGrp;
 
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
