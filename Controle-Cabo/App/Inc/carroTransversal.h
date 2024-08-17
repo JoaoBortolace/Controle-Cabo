@@ -21,6 +21,8 @@ extern "C"
 #define BOBINA_TICK_VOLTA						(8u)
 #define CARRO_TRANSVERSAL_TICK_VOLTA			(20u)
 
+#define HOME_TIMEOUT	25000000
+
 /* TypeDef -------------------------------------------------------------------*/
 typedef enum {
 	ESQUERDA = 0,

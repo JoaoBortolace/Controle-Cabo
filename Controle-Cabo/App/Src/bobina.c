@@ -12,8 +12,8 @@
 static OS_TCB				motorBobinaTaskTCB;
 static CPU_STK          	motorBobinaTaskStk[MOTOR_BOBINA_TASK_STK_SIZE];
 
-volatile static uint16_t 	motorBobinaTensaoRead = 0;
-volatile static uint16_t 	motorBobinaVel = 0;
+static volatile uint16_t 	motorBobinaTensaoRead = 0;
+static volatile uint16_t 	motorBobinaVel = 0;
 
 /* Functions prototypes ------------------------------------------------------*/
 
