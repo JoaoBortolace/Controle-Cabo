@@ -9,7 +9,7 @@
 #include "main.h"
 
 /* Variáveis Privadas --------------------------------------------------------*/
-OS_FLAG_GRP 				flagsGrp;
+volatile OS_FLAG_GRP 				flagsGrp;
 
 static OS_TCB				programStartTaskTCB;
 static CPU_STK          	programStartTaskStk[PROGRAM_START_TASK_STK_SIZE];
