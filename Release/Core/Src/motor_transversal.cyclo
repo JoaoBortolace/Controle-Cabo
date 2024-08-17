@@ -1,0 +1,4 @@
+../Core/Src/motor_transversal.c:13:6:Motor_Transversal_Init	1
+../Core/Src/motor_transversal.c:38:6:Motor_Transversal_Ctrl	5
+../Core/Src/motor_transversal.c:65:11:Motor_Transversal_GetDir	2
+../Core/Src/motor_transversal.c:88:6:Motor_Transversal_ToggleDir	2

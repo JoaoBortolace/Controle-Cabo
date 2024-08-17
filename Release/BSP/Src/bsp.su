@@ -1,0 +1,2 @@
+../BSP/Src/bsp.c:10:6:BSP_Error_Handler	8	static,ignoring_inline_asm
+../BSP/Src/bsp.c:20:6:BSP_Init	24	static

@@ -1,0 +1,4 @@
+../Core/Src/opto.c:49:13:OPTO3_Interruption	0	static
+../Core/Src/opto.c:33:13:OPTO2_Interruption	8	static
+../Core/Src/opto.c:17:13:OPTO1_Interruption	8	static
+../Core/Src/opto.c:61:6:OPTO_Init	32	static

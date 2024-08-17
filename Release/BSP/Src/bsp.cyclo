@@ -1,0 +1,2 @@
+../BSP/Src/bsp.c:10:6:BSP_Error_Handler	1
+../BSP/Src/bsp.c:20:6:BSP_Init	1

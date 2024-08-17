@@ -1,0 +1,10 @@
+../BSP/Src/bsp_gpio.c:12:6:BSP_GPIO_Init	64	static
+../BSP/Src/bsp_gpio.c:116:6:BSP_GPIO_WritePin	0	static
+../BSP/Src/bsp_gpio.c:128:6:BSP_GPIO_SetPin	0	static
+../BSP/Src/bsp_gpio.c:133:6:BSP_GPIO_ResetPin	0	static
+../BSP/Src/bsp_gpio.c:138:6:BSP_GPIO_WritePort	0	static
+../BSP/Src/bsp_gpio.c:143:6:BSP_GPIO_TogglePin	0	static
+../BSP/Src/bsp_gpio.c:155:6:BSP_GPIO_ReadPin	0	static
+../BSP/Src/bsp_gpio.c:160:10:BSP_GPIO_ReadPort	0	static
+../BSP/Src/bsp_gpio.c:165:6:BSP_GPIO_ReadOutputPin	0	static
+../BSP/Src/bsp_gpio.c:169:10:BSP_GPIO_ReadOutputPort	0	static
