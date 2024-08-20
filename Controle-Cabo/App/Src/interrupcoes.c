@@ -1,4 +1,4 @@
-/* Interrupções externas --------------------------------------------------------*/
+/* Interrupções externas ------------------------------------------------------*/
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
         switch (GPIO_Pin) {
@@ -53,5 +53,20 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
                 default:
                         __NOP();
                         break;
+        }
+}
+
+/* Interrupções do ADC -------------------------------------------------------*/
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
+{
+        if (hadc->Instance == ADC2) {
+                OS_ERR err;
+
+                OSFlagPost(
+                        (OS_FLAG_GRP *)&flagsGrp,
+                        (OS_FLAGS     )MOTOR_BOBINA_ADC_RDY,
+                        (OS_OPT       )OS_OPT_POST_FLAG_SET,
+                        (OS_ERR      *)&err
+                );
         }
 }
