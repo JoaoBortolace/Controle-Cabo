@@ -61,7 +61,7 @@
                                                                 /* Indicates if arguments received from any port ...    */
                                                                 /* ... interface provided by the developer or ...       */
                                                                 /* ... application are checked/validated.               */
-#define  LIB_MEM_CFG_ARG_CHK_EXT_EN     DEF_DISABLED
+#define  LIB_MEM_CFG_ARG_CHK_EXT_EN     DEF_ENABLED
 
 
 /*
