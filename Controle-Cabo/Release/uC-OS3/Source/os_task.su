@@ -1,4 +1,4 @@
-../uC-OS3/Source/os_task.c:223:7:OSTaskCreate	72	static
+../uC-OS3/Source/os_task.c:223:7:OSTaskCreate	64	static
 ../uC-OS3/Source/os_task.c:665:13:OSTaskQFlush	16	static
 ../uC-OS3/Source/os_task.c:754:8:OSTaskQPend	40	static
 ../uC-OS3/Source/os_task.c:950:14:OSTaskQPendAbort	32	static
@@ -13,7 +13,6 @@
 ../uC-OS3/Source/os_task.c:1960:13:OSTaskSemSet	24	static
 ../uC-OS3/Source/os_task.c:2032:7:OSTaskStkChk	32	static
 ../uC-OS3/Source/os_task.c:2197:8:OSTaskSuspend	16	static
-../uC-OS3/Source/os_task.c:2328:7:OSTaskTimeQuantaSet	16	static
 ../uC-OS3/Source/os_task.c:2445:7:OS_TaskInit	0	static
 ../uC-OS3/Source/os_task.c:2475:7:OS_TaskInitTCB	16	static
 ../uC-OS3/Source/os_task.c:2760:7:OS_TaskChangePrio	16	static

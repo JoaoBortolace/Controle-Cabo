@@ -21,7 +21,6 @@ extern "C"
 
 /* Private includes ----------------------------------------------------------*/
 #include "perifericos.h"
-#include "flash.h"
 #include "taskCtrl.h"
 #include "bobina.h"
 #include "carroTransversal.h"

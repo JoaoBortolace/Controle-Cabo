@@ -43,10 +43,10 @@
 #define OS_CFG_OBJ_CREATED_CHK_EN                  1u           /* Enable (1) or Disable (0) object created checks                       */
 #define OS_CFG_TS_EN                               0u           /* Enable (1) or Disable (0) time stamping                               */
 
-#define OS_CFG_PRIO_MAX                           64u           /* Defines the maximum number of task priorities (see OS_PRIO data type) */
+#define OS_CFG_PRIO_MAX                           32u           /* Defines the maximum number of task priorities (see OS_PRIO data type) */
 
 #define OS_CFG_SCHED_LOCK_TIME_MEAS_EN             0u           /* Include code to measure scheduler lock time                           */
-#define OS_CFG_SCHED_ROUND_ROBIN_EN                1u           /* Include code for Round-Robin scheduling                               */
+#define OS_CFG_SCHED_ROUND_ROBIN_EN                0u           /* Include code for Round-Robin scheduling                               */
 
 #define OS_CFG_STK_SIZE_MIN                       64u           /* Minimum allowable task stack size                                     */
 

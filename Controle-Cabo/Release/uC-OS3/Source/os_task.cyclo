@@ -1,4 +1,4 @@
-../uC-OS3/Source/os_task.c:223:7:OSTaskCreate	15
+../uC-OS3/Source/os_task.c:223:7:OSTaskCreate	14
 ../uC-OS3/Source/os_task.c:665:13:OSTaskQFlush	4
 ../uC-OS3/Source/os_task.c:754:8:OSTaskQPend	12
 ../uC-OS3/Source/os_task.c:950:14:OSTaskQPendAbort	8
@@ -13,7 +13,6 @@
 ../uC-OS3/Source/os_task.c:1960:13:OSTaskSemSet	5
 ../uC-OS3/Source/os_task.c:2032:7:OSTaskStkChk	10
 ../uC-OS3/Source/os_task.c:2197:8:OSTaskSuspend	14
-../uC-OS3/Source/os_task.c:2328:7:OSTaskTimeQuantaSet	5
 ../uC-OS3/Source/os_task.c:2445:7:OS_TaskInit	1
 ../uC-OS3/Source/os_task.c:2475:7:OS_TaskInitTCB	1
 ../uC-OS3/Source/os_task.c:2760:7:OS_TaskChangePrio	13

@@ -9,7 +9,7 @@
 #include "main.h"
 
 /* Variáveis Privadas --------------------------------------------------------*/
-volatile OS_FLAG_GRP 				flagsGrp;
+volatile OS_FLAG_GRP 		flagsGrp;
 
 static OS_TCB				programStartTaskTCB;
 static CPU_STK          	programStartTaskStk[PROGRAM_START_TASK_STK_SIZE];
@@ -27,6 +27,9 @@ int main(void)
 
 	/* Configura o CLock da CPU para 160MHz */
 	SystemClock_Config();
+
+	/* Iniciliza o CPU */
+	CPU_Init();
 
 	/* Inicializa o sistema */
 	OS_ERR err;
@@ -108,7 +111,8 @@ static void programStartTask(void *p_arg)
 	/* Infinite loop */
 	while (DEF_TRUE) {
 		HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);
-		OSTimeDly(500, OS_OPT_TIME_DLY, &err);
+		OSTimeDlyHMSM(0, 0, 1, 0, OS_OPT_TIME_HMSM_NON_STRICT + OS_OPT_TIME_DLY, &err);
+		//OSTimeDly(500, OS_OPT_TIME_DLY, &err);
 	}
 }
 
@@ -119,9 +123,8 @@ void Error_Handler(void)
 	__disable_irq();
 
 	HAL_GPIO_WritePin(LED_ERRO_GPIO_Port, LED_ERRO_Pin, LED_ON);
-	HAL_PWR_EnterSTOPMode(PWR_LOWPOWERREGULATOR_ON, PWR_STOPENTRY_WFI);
 
 	while (1) {
-		__WFI();
+		;;
 	}
 }

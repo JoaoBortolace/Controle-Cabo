@@ -1,3 +1,3 @@
-../App/Src/bobina.c:36:13:motorBobinaTask	64	static
+../App/Src/bobina.c:36:13:motorBobinaTask	56	static
 ../App/Src/bobina.c:21:6:HAL_ADC_ConvCpltCallback	16	static
-../App/Src/bobina.c:108:6:motorBobinaCreateTask	56	static
+../App/Src/bobina.c:102:6:motorBobinaCreateTask	56	static

@@ -90,11 +90,11 @@ static void carroTransversalTask(void *p_arg)
 	(void)p_arg;
 
 	/* PWM de controle da velocidade do carro transversal */
-	HAL_TIM_PWM_Start(&htim1, MOTOR_CARRO_TRANSVERSAL_PWM_Channel);
+	HAL_TIM_PWM_Start(&htim1, MOTOR_CARRO_TRANSVERSAL_PWM_Channel); /* 20kHz */
 
 	/* Trás o carro transversal para posição inicial */
 	carroTransversalHome();
-	carroTransversalSetDuty(0.0);
+	carroTransversalSetDuty(0);
 
 	bobinaTick = 0;
 	carroTransversalTick = 0;
@@ -119,16 +119,12 @@ static void carroTransversalTask(void *p_arg)
 			GPIO_PinState fimCurso_1 = HAL_GPIO_ReadPin(FIM_CURSO_1_GPIO_Port, FIM_CURSO_1_Pin);
 			GPIO_PinState fimCurso_2 = HAL_GPIO_ReadPin(FIM_CURSO_2_GPIO_Port, FIM_CURSO_2_Pin);
 
-			/*
-			 * Para evitar que o carro passe do ponto
-			 * Quando o passo atinge o valor 14, desacelera até linearmente 40% de duty
-			 * 40% para evitar que o carro trave sem conseguir andar
-			 */
-			if (carroTransversalTick < 14) {
+			/* Para evitar que o carro passe do ponto */
+			if (carroTransversalTick < CARRO_TRANSVERSAL_DESACELERA) {
 				carroTransversalSetDuty(1.0);
 			}
 			else {
-				carroTransversalSetDuty(1.0 - 0.1*(carroTransversalTick - 14));
+				carroTransversalSetDuty(1.0 - 0.1*(carroTransversalTick - CARRO_TRANSVERSAL_DESACELERA));
 			}
 
 			if ((fimCurso_1 == GPIO_PIN_SET) && (fimCurso_2 == GPIO_PIN_SET)) { /* Ambas fim de cursos acionado -> impossível */
@@ -159,7 +155,7 @@ static void carroTransversalTask(void *p_arg)
 		}
 
 		/* Freia e para o carro */
-		carroTransversalSetDuty(1.0);
+		carroTransversalSetDuty(1);
 		carroTransversalDir(FREIO);
 	}
 }
@@ -235,10 +231,10 @@ static void carroTransversalSetDuty(float duty)
 	if (duty > 0 && duty < 1) {
 		MOTOR_CARRO_TRANSVERSAL_PWM_TIM->CCR4 = (uint32_t) (((float) MOTOR_CARRO_TRANSVERSAL_PWM_TIM->ARR) * duty);
 	}
-	else if (duty < 0) {
+	else if (duty <= 0) {
 		MOTOR_CARRO_TRANSVERSAL_PWM_TIM->CCR4 = 0;
 	}
 	else {
-		MOTOR_CARRO_TRANSVERSAL_PWM_TIM->CCR4 = MOTOR_CARRO_TRANSVERSAL_PWM_TIM->ARR;
+		MOTOR_CARRO_TRANSVERSAL_PWM_TIM->CCR4 = 65535;
 	}
 }

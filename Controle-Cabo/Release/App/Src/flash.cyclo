@@ -1,9 +1,0 @@
-../App/Src/flash.c:21:14:Write_BYTE_Flash	2
-../App/Src/flash.c:41:14:Write_HALFWORD_Flash	2
-../App/Src/flash.c:61:14:Write_WORD_Flash	2
-../App/Src/flash.c:81:14:Read_BYTE_Flash	2
-../App/Src/flash.c:96:14:Read_HALFWORD_Flash	2
-../App/Src/flash.c:111:14:Read_WORD_Flash	2
-../App/Src/flash.c:126:14:Read_BYTE_Config	2
-../App/Src/flash.c:139:14:Read_HALFWORD_Config	2
-../App/Src/flash.c:152:14:Read_WORD_Config	2

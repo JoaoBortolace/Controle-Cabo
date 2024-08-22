@@ -14,4 +14,4 @@
 ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c:644:13:FLASH_Program_Word	1
 ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c:669:13:FLASH_Program_HalfWord	1
 ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c:694:13:FLASH_Program_Byte	1
-../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c:711:13:FLASH_SetErrorCode	7
+../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c:711:13:FLASH_SetErrorCode	6

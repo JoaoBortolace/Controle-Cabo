@@ -30,7 +30,7 @@ extern "C"
 /* Flags ---------------------------------------------------------------------*/
 #define MOTOR_BOBINA_ADC_RDY  					(OS_FLAGS)0x0001
 #define MOTOR_BOBINA_LIBERANDO					(OS_FLAGS)0x0002
-#define MOTOR_BOBINA_PUXANDO					(OS_FLAGS)0x0003
+#define MOTOR_BOBINA_PUXANDO					(OS_FLAGS)0x0004
 
 #ifdef __cplusplus
 }

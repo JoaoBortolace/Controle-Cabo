@@ -61,7 +61,7 @@
                                                                 /* Indicates if arguments received from any port ...    */
                                                                 /* ... interface provided by the developer or ...       */
                                                                 /* ... application are checked/validated.               */
-#define  LIB_MEM_CFG_ARG_CHK_EXT_EN     DEF_ENABLED
+#define  LIB_MEM_CFG_ARG_CHK_EXT_EN     DEF_DISABLED
 
 
 /*
@@ -75,7 +75,7 @@
                                                                 /* Assembly-optimized function(s).                      */
                                                                 /* Enable/disable assembly-optimized memory ...         */
                                                                 /* ... function(s). [see Note #1]                       */
-#define  LIB_MEM_CFG_OPTIMIZE_ASM_EN    DEF_DISABLED
+#define  LIB_MEM_CFG_OPTIMIZE_ASM_EN    DEF_ENABLED
 
 
 /*
@@ -143,7 +143,7 @@
 
                                                                 /* Floating point feature(s).                           */
                                                                 /* Enable/disable floating point to string functions.   */
-#define  LIB_STR_CFG_FP_EN                      DEF_DISABLED
+#define  LIB_STR_CFG_FP_EN                      DEF_ENABLED
 
 
                                                                 /* Floating point number of significant digits.         */

@@ -5,8 +5,6 @@
 ../uC-OS3/Source/os_core.c:430:7:OSSched	4
 ../uC-OS3/Source/os_core.c:540:7:OSSchedLock	4
 ../uC-OS3/Source/os_core.c:601:7:OSSchedUnlock	5
-../uC-OS3/Source/os_core.c:670:7:OSSchedRoundRobinCfg	2
-../uC-OS3/Source/os_core.c:724:7:OSSchedRoundRobinYield	7
 ../uC-OS3/Source/os_core.c:806:7:OSStart	4
 ../uC-OS3/Source/os_core.c:871:13:OSVersion	1
 ../uC-OS3/Source/os_core.c:949:7:OS_IdleTaskInit	1
@@ -23,5 +21,4 @@
 ../uC-OS3/Source/os_core.c:1790:7:OS_RdyListInsertTail	2
 ../uC-OS3/Source/os_core.c:1871:7:OS_RdyListMoveHeadToTail	3
 ../uC-OS3/Source/os_core.c:1951:7:OS_RdyListRemove	4
-../uC-OS3/Source/os_core.c:2063:7:OS_SchedRoundRobin	10
 ../uC-OS3/Source/os_core.c:2137:7:OS_TaskBlock	5

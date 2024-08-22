@@ -15,7 +15,6 @@
 ../uC-OS3/Source/os_task.c:1960:13:OSTaskSemSet	32	static
 ../uC-OS3/Source/os_task.c:2032:7:OSTaskStkChk	40	static
 ../uC-OS3/Source/os_task.c:2197:8:OSTaskSuspend	24	static
-../uC-OS3/Source/os_task.c:2328:7:OSTaskTimeQuantaSet	32	static
 ../uC-OS3/Source/os_task.c:2384:7:OS_TaskDbgListAdd	16	static
 ../uC-OS3/Source/os_task.c:2398:7:OS_TaskDbgListRemove	24	static
 ../uC-OS3/Source/os_task.c:2445:7:OS_TaskInit	16	static

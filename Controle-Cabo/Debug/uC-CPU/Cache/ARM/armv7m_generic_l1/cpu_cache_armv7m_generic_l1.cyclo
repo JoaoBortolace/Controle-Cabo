@@ -1,0 +1,4 @@
+../uC-CPU/Cache/ARM/armv7m_generic_l1/cpu_cache_armv7m_generic_l1.c:98:7:CPU_Cache_Init	1
+../uC-CPU/Cache/ARM/armv7m_generic_l1/cpu_cache_armv7m_generic_l1.c:118:21:CPU_DCache_LineSizeGet	1
+../uC-CPU/Cache/ARM/armv7m_generic_l1/cpu_cache_armv7m_generic_l1.c:141:7:CPU_DCache_RangeInv	3
+../uC-CPU/Cache/ARM/armv7m_generic_l1/cpu_cache_armv7m_generic_l1.c:180:7:CPU_DCache_RangeFlush	3

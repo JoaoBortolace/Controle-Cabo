@@ -4,8 +4,6 @@
 ../uC-OS3/Source/os_core.c:430:7:OSSched	16	static,ignoring_inline_asm
 ../uC-OS3/Source/os_core.c:540:7:OSSchedLock	24	static
 ../uC-OS3/Source/os_core.c:601:7:OSSchedUnlock	24	static
-../uC-OS3/Source/os_core.c:670:7:OSSchedRoundRobinCfg	32	static
-../uC-OS3/Source/os_core.c:724:7:OSSchedRoundRobinYield	32	static
 ../uC-OS3/Source/os_core.c:806:7:OSStart	24	static
 ../uC-OS3/Source/os_core.c:871:13:OSVersion	16	static
 ../uC-OS3/Source/os_core.c:907:7:OS_IdleTask	24	static
@@ -25,5 +23,4 @@
 ../uC-OS3/Source/os_core.c:1790:7:OS_RdyListInsertTail	24	static
 ../uC-OS3/Source/os_core.c:1871:7:OS_RdyListMoveHeadToTail	32	static
 ../uC-OS3/Source/os_core.c:1951:7:OS_RdyListRemove	32	static
-../uC-OS3/Source/os_core.c:2063:7:OS_SchedRoundRobin	24	static
 ../uC-OS3/Source/os_core.c:2137:7:OS_TaskBlock	16	static

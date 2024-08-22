@@ -29,6 +29,7 @@ System/Startup \
 System \
 uC-CPU/ARM-Cortex-M/ARMv7-M/GNU \
 uC-CPU/ARM-Cortex-M/ARMv7-M \
+uC-CPU/Cache/ARM/armv7m_generic_l1 \
 uC-CPU \
 uC-LIB/Ports/ARM-Cortex-M4/GNU \
 uC-LIB \

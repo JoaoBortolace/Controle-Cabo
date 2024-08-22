@@ -3,10 +3,6 @@
 ../uC-CPU/cpu_core.c:254:7:CPU_NameClr	8	static
 ../uC-CPU/cpu_core.c:293:7:CPU_NameGet	16	static
 ../uC-CPU/cpu_core.c:341:7:CPU_NameSet	16	static
-../uC-CPU/cpu_core.c:422:11:CPU_TS_Get32	0	static
-../uC-CPU/cpu_core.c:547:7:CPU_TS_Update	0	static
-../uC-CPU/cpu_core.c:584:18:CPU_TS_TmrFreqGet	0	static
-../uC-CPU/cpu_core.c:629:7:CPU_TS_TmrFreqSet	0	static
 ../uC-CPU/cpu_core.c:1108:11:CPU_CntLeadZeros08	8	static
 ../uC-CPU/cpu_core.c:1168:11:CPU_CntLeadZeros16	8	static
 ../uC-CPU/cpu_core.c:1234:11:CPU_CntLeadZeros32	0	static
@@ -16,4 +12,3 @@
 ../uC-CPU/cpu_core.c:1781:11:CPU_CntTrailZeros32	0	static
 ../uC-CPU/cpu_core.c:1880:11:CPU_CntTrailZeros64	0	static
 ../uC-CPU/cpu_core.c:1927:13:CPU_PopCnt32	0	static
-../uC-CPU/cpu_core.c:1966:7:CPU_StatReset	0	static

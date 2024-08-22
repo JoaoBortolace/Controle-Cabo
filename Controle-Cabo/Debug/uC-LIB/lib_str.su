@@ -18,6 +18,7 @@
 ../uC-LIB/lib_str.c:1840:12:Str_Str_N	56	static
 ../uC-LIB/lib_str.c:2032:12:Str_FmtNbr_Int32U	40	static
 ../uC-LIB/lib_str.c:2248:12:Str_FmtNbr_Int32S	56	static
+../uC-LIB/lib_str.c:2562:12:Str_FmtNbr_32	72	static
 ../uC-LIB/lib_str.c:2966:13:Str_ParseNbr_Int32U	40	static
 ../uC-LIB/lib_str.c:3182:13:Str_ParseNbr_Int32S	48	static
 ../uC-LIB/lib_str.c:3437:20:Str_FmtNbr_Int32	48	static

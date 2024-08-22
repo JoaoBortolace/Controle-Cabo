@@ -25,5 +25,3 @@
 ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c:545:10:HAL_GetUIDw0	4	static
 ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c:554:10:HAL_GetUIDw1	4	static
 ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c:563:10:HAL_GetUIDw2	4	static
-../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c:580:6:HAL_EnableMemorySwappingBank	4	static
-../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c:595:6:HAL_DisableMemorySwappingBank	4	static
