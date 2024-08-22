@@ -1,5 +1,5 @@
-../uC-OS3/Source/os_msg.c:54:7:OS_MsgPoolInit	32	static
-../uC-OS3/Source/os_msg.c:119:13:OS_MsgQFreeAll	24	static
-../uC-OS3/Source/os_msg.c:161:7:OS_MsgQInit	16	static
-../uC-OS3/Source/os_msg.c:198:8:OS_MsgQGet	32	static
-../uC-OS3/Source/os_msg.c:282:7:OS_MsgQPut	32	static
+../uC-OS3/Source/os_msg.c:54:7:OS_MsgPoolInit	12	static
+../uC-OS3/Source/os_msg.c:119:13:OS_MsgQFreeAll	4	static
+../uC-OS3/Source/os_msg.c:161:7:OS_MsgQInit	0	static
+../uC-OS3/Source/os_msg.c:198:8:OS_MsgQGet	4	static
+../uC-OS3/Source/os_msg.c:282:7:OS_MsgQPut	20	static

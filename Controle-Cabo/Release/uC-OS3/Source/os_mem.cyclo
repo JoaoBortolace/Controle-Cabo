@@ -1,4 +1,4 @@
-../uC-OS3/Source/os_mem.c:72:7:OSMemCreate	9
-../uC-OS3/Source/os_mem.c:203:8:OSMemGet	4
-../uC-OS3/Source/os_mem.c:282:7:OSMemPut	5
+../uC-OS3/Source/os_mem.c:72:7:OSMemCreate	4
+../uC-OS3/Source/os_mem.c:203:8:OSMemGet	3
+../uC-OS3/Source/os_mem.c:282:7:OSMemPut	3
 ../uC-OS3/Source/os_mem.c:385:7:OS_MemInit	1

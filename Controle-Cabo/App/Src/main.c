@@ -28,12 +28,10 @@ int main(void)
 	/* Configura o CLock da CPU para 160MHz */
 	SystemClock_Config();
 
-	/* Iniciliza o CPU */
-	CPU_Init();
-
 	/* Inicializa o sistema */
 	OS_ERR err;
 
+	CPU_Init();
 	OSInit(&err);
 
 	if (err != OS_ERR_NONE) {
@@ -82,7 +80,7 @@ int main(void)
 		;;
 	}
 
-	return 0;
+	return (0);
 }
 
 /* Task ----------------------------------------------------------------------*/
@@ -112,7 +110,6 @@ static void programStartTask(void *p_arg)
 	while (DEF_TRUE) {
 		HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);
 		OSTimeDlyHMSM(0, 0, 1, 0, OS_OPT_TIME_HMSM_NON_STRICT + OS_OPT_TIME_DLY, &err);
-		//OSTimeDly(500, OS_OPT_TIME_DLY, &err);
 	}
 }
 

@@ -18,7 +18,7 @@ extern "C"
 #include "main.h"
 
 /* Private define ------------------------------------------------------------*/
-#define BOBINA_TICK_VOLTA						(8u)
+#define BOBINA_TICK_VOLTA						(8)
 #define CARRO_TRANSVERSAL_TICK_VOLTA			(10u)
 #define CARRO_TRANSVERSAL_DESACELERA			(7u)
 

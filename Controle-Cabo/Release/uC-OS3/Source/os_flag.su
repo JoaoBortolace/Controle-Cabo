@@ -1,6 +1,6 @@
 ../uC-OS3/Source/os_flag.c:61:7:OSFlagCreate	24	static
 ../uC-OS3/Source/os_flag.c:166:13:OSFlagDel	24	static
-../uC-OS3/Source/os_flag.c:351:11:OSFlagPend	40	static
+../uC-OS3/Source/os_flag.c:351:11:OSFlagPend	48	static
 ../uC-OS3/Source/os_flag.c:752:13:OSFlagPendAbort	32	static
 ../uC-OS3/Source/os_flag.c:865:11:OSFlagPendGetFlagsRdy	16	static
 ../uC-OS3/Source/os_flag.c:942:11:OSFlagPost	32	static

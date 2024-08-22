@@ -14,11 +14,14 @@ extern "C"
 #endif
 
 /* Defines -------------------------------------------------------------------*/
-#define TASK_NUMBER								3
+#define TASK_NUMBER								(3u)
 
 /* Task Priority -------------------------------------------------------------*/
 /* Menor o valor -> Maior a prioridade */
-#define PROGRAM_START_TASK_PRIO                 5u
+#define TASK_MAX_PRIO							(2u)
+#define TASK_MIN_PRIO							(OS_CFG_PRIO_MAX - 3)
+
+#define PROGRAM_START_TASK_PRIO                 (TASK_MAX_PRIO + TASK_NUMBER)
 #define CARRO_TRANSVERSAL_TASK_PRIO            	(PROGRAM_START_TASK_PRIO - 1)
 #define MOTOR_BOBINA_TASK_PRIO                  (PROGRAM_START_TASK_PRIO - 2)
 
@@ -28,9 +31,9 @@ extern "C"
 #define MOTOR_BOBINA_TASK_STK_SIZE              (256u)
 
 /* Flags ---------------------------------------------------------------------*/
-#define MOTOR_BOBINA_ADC_RDY  					(OS_FLAGS)0x0001
-#define MOTOR_BOBINA_LIBERANDO					(OS_FLAGS)0x0002
-#define MOTOR_BOBINA_PUXANDO					(OS_FLAGS)0x0004
+#define MOTOR_BOBINA_ADC_RDY  					((OS_FLAGS)0x0001)
+#define MOTOR_BOBINA_LIBERANDO					((OS_FLAGS)0x0002)
+#define MOTOR_BOBINA_PUXANDO					((OS_FLAGS)0x0004)
 
 #ifdef __cplusplus
 }

@@ -1,1 +1,1 @@
-../uC-OS3/Source/os_dbg.c:403:7:OS_Dbg_Init	24	static
+../uC-OS3/Source/os_dbg.c:403:7:OS_Dbg_Init	16	static

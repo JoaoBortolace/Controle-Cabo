@@ -28,9 +28,9 @@
 #define OS_CFG_H
 
                                                                 /* --------------------------- MISCELLANEOUS --------------------------- */
-#define OS_CFG_APP_HOOKS_EN                        1u           /* Enable (1) or Disable (0) application specific hooks                  */
-#define OS_CFG_ARG_CHK_EN                          1u           /* Enable (1) or Disable (0) argument checking                           */
-#define OS_CFG_CALLED_FROM_ISR_CHK_EN              1u           /* Enable (1) or Disable (0) check for called from ISR                   */
+#define OS_CFG_APP_HOOKS_EN                        0u           /* Enable (1) or Disable (0) application specific hooks                  */
+#define OS_CFG_ARG_CHK_EN                          0u           /* Enable (1) or Disable (0) argument checking                           */
+#define OS_CFG_CALLED_FROM_ISR_CHK_EN              0u           /* Enable (1) or Disable (0) check for called from ISR                   */
 #ifdef DEBUG
 	#define OS_CFG_DBG_EN                          1u           /* Enable (1) or Disable (0) debug code/variables                        */
 #else
@@ -46,7 +46,7 @@
 #define OS_CFG_PRIO_MAX                           32u           /* Defines the maximum number of task priorities (see OS_PRIO data type) */
 
 #define OS_CFG_SCHED_LOCK_TIME_MEAS_EN             0u           /* Include code to measure scheduler lock time                           */
-#define OS_CFG_SCHED_ROUND_ROBIN_EN                0u           /* Include code for Round-Robin scheduling                               */
+#define OS_CFG_SCHED_ROUND_ROBIN_EN                1u           /* Include code for Round-Robin scheduling                               */
 
 #define OS_CFG_STK_SIZE_MIN                       64u           /* Minimum allowable task stack size                                     */
 

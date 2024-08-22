@@ -13,7 +13,7 @@ static OS_TCB				carroTransversalTaskTCB;
 static CPU_STK          	carroTransversalStk[CARRO_TRANSVERSAL_TASK_STK_SIZE];
 
 static volatile int8_t		bobinaTick;
-static volatile int8_t		carroTransversalTick;
+static volatile uint8_t		carroTransversalTick;
 
 static volatile bool		carroTransversalAndar;
 
@@ -115,7 +115,7 @@ static void carroTransversalTask(void *p_arg)
 					(OS_ERR      *)&err
 				);
 
-		while (carroTransversalAndar) {
+		while (carroTransversalAndar == true) {
 			GPIO_PinState fimCurso_1 = HAL_GPIO_ReadPin(FIM_CURSO_1_GPIO_Port, FIM_CURSO_1_Pin);
 			GPIO_PinState fimCurso_2 = HAL_GPIO_ReadPin(FIM_CURSO_2_GPIO_Port, FIM_CURSO_2_Pin);
 
@@ -188,7 +188,7 @@ void carroTransversalCreateTask(void)
 
 static void carroTransversalHome(void)
 {
-	uint32_t homeTimeout = HOME_TIMEOUT;
+	int32_t homeTimeout = HOME_TIMEOUT;
 
 	while (homeTimeout > 0 && (HAL_GPIO_ReadPin(FIM_CURSO_2_GPIO_Port, FIM_CURSO_2_Pin) == GPIO_PIN_RESET)) {
 		carroTransversalDir(DIREITA);

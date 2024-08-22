@@ -4,4 +4,4 @@
 ../App/Src/perifericos.c:157:6:MX_TIM1_Init	96	static
 ../App/Src/perifericos.c:224:6:MX_TIM2_Init	32	static
 ../App/Src/perifericos.c:257:6:MX_DMA_Init	16	static
-../App/Src/perifericos.c:274:6:MX_GPIO_Init	64	static
+../App/Src/perifericos.c:274:6:MX_GPIO_Init	80	static

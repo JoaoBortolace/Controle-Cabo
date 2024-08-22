@@ -1,9 +1,9 @@
-../uC-OS3/Source/os_q.c:65:7:OSQCreate	32	static
-../uC-OS3/Source/os_q.c:174:13:OSQDel	48	static
-../uC-OS3/Source/os_q.c:316:13:OSQFlush	24	static
+../uC-OS3/Source/os_q.c:316:13:OSQFlush	16	static
 ../uC-OS3/Source/os_q.c:421:8:OSQPend	32	static
-../uC-OS3/Source/os_q.c:637:13:OSQPendAbort	48	static
-../uC-OS3/Source/os_q.c:783:7:OSQPost	56	static
+../uC-OS3/Source/os_q.c:637:13:OSQPendAbort	24	static
+../uC-OS3/Source/os_q.c:783:7:OSQPost	40	static
 ../uC-OS3/Source/os_q.c:916:7:OS_QClr	16	static
-../uC-OS3/Source/os_q.c:947:7:OS_QDbgListAdd	16	static
-../uC-OS3/Source/os_q.c:961:7:OS_QDbgListRemove	24	static
+../uC-OS3/Source/os_q.c:947:7:OS_QDbgListAdd	0	static
+../uC-OS3/Source/os_q.c:65:7:OSQCreate	24	static
+../uC-OS3/Source/os_q.c:961:7:OS_QDbgListRemove	0	static
+../uC-OS3/Source/os_q.c:174:13:OSQDel	24	static

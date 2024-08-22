@@ -1,9 +1,9 @@
-../uC-OS3/Source/os_flag.c:61:7:OSFlagCreate	4
-../uC-OS3/Source/os_flag.c:166:13:OSFlagDel	10
-../uC-OS3/Source/os_flag.c:351:11:OSFlagPend	47
-../uC-OS3/Source/os_flag.c:752:13:OSFlagPendAbort	13
-../uC-OS3/Source/os_flag.c:865:11:OSFlagPendGetFlagsRdy	3
-../uC-OS3/Source/os_flag.c:942:11:OSFlagPost	40
+../uC-OS3/Source/os_flag.c:61:7:OSFlagCreate	2
+../uC-OS3/Source/os_flag.c:166:13:OSFlagDel	8
+../uC-OS3/Source/os_flag.c:351:11:OSFlagPend	34
+../uC-OS3/Source/os_flag.c:752:13:OSFlagPendAbort	7
+../uC-OS3/Source/os_flag.c:865:11:OSFlagPendGetFlagsRdy	2
+../uC-OS3/Source/os_flag.c:942:11:OSFlagPost	39
 ../uC-OS3/Source/os_flag.c:1130:7:OS_FlagBlock	1
 ../uC-OS3/Source/os_flag.c:1162:7:OS_FlagClr	1
 ../uC-OS3/Source/os_flag.c:1259:8:OS_FlagTaskRdy	6

@@ -1,4 +1,4 @@
+../uC-CPU/Cache/ARM/armv7m_generic_l1/cpu_cache_armv7m_generic_l1.c:118:21:CPU_DCache_LineSizeGet	0	static
 ../uC-CPU/Cache/ARM/armv7m_generic_l1/cpu_cache_armv7m_generic_l1.c:98:7:CPU_Cache_Init	8	static
-../uC-CPU/Cache/ARM/armv7m_generic_l1/cpu_cache_armv7m_generic_l1.c:118:21:CPU_DCache_LineSizeGet	4	static
-../uC-CPU/Cache/ARM/armv7m_generic_l1/cpu_cache_armv7m_generic_l1.c:141:7:CPU_DCache_RangeInv	16	static,ignoring_inline_asm
-../uC-CPU/Cache/ARM/armv7m_generic_l1/cpu_cache_armv7m_generic_l1.c:180:7:CPU_DCache_RangeFlush	16	static,ignoring_inline_asm
+../uC-CPU/Cache/ARM/armv7m_generic_l1/cpu_cache_armv7m_generic_l1.c:141:7:CPU_DCache_RangeInv	0	static,ignoring_inline_asm
+../uC-CPU/Cache/ARM/armv7m_generic_l1/cpu_cache_armv7m_generic_l1.c:180:7:CPU_DCache_RangeFlush	0	static,ignoring_inline_asm

@@ -1,9 +1,9 @@
-../uC-OS3/Source/os_sem.c:65:7:OSSemCreate	4
-../uC-OS3/Source/os_sem.c:173:13:OSSemDel	9
-../uC-OS3/Source/os_sem.c:340:13:OSSemPend	15
-../uC-OS3/Source/os_sem.c:562:13:OSSemPendAbort	15
-../uC-OS3/Source/os_sem.c:687:13:OSSemPost	15
-../uC-OS3/Source/os_sem.c:826:7:OSSemSet	6
+../uC-OS3/Source/os_sem.c:340:13:OSSemPend	10
+../uC-OS3/Source/os_sem.c:562:13:OSSemPendAbort	7
+../uC-OS3/Source/os_sem.c:687:13:OSSemPost	8
+../uC-OS3/Source/os_sem.c:826:7:OSSemSet	4
 ../uC-OS3/Source/os_sem.c:895:7:OS_SemClr	1
 ../uC-OS3/Source/os_sem.c:926:7:OS_SemDbgListAdd	2
+../uC-OS3/Source/os_sem.c:65:7:OSSemCreate	2
 ../uC-OS3/Source/os_sem.c:940:7:OS_SemDbgListRemove	4
+../uC-OS3/Source/os_sem.c:173:13:OSSemDel	7

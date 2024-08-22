@@ -35,7 +35,6 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
 /* Task ----------------------------------------------------------------------*/
 static void motorBobinaTask(void *p_arg)
 {
-	#define ERRO_DEATHZONE			(20U)
 	#define DAC_RES					(12)
 	#define DAC_MAX					((1<<12) - 1)
 	#define FREQUENCIA_AMOSTRAGEM	(6400.0)
