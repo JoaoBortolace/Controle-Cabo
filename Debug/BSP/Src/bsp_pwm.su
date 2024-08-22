@@ -1,2 +1,0 @@
-../BSP/Src/bsp_pwm.c:13:6:BSP_PWM_Init	80	static
-../BSP/Src/bsp_pwm.c:89:6:BSP_PWM_SetDuty	8	static

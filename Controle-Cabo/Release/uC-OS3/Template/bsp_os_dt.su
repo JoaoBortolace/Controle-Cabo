@@ -1,0 +1,3 @@
+../uC-OS3/Template/bsp_os_dt.c:100:7:BSP_OS_TickInit	0	static
+../uC-OS3/Template/bsp_os_dt.c:129:7:BSP_OS_TickEnable	0	static
+../uC-OS3/Template/bsp_os_dt.c:150:7:BSP_OS_TickDisable	0	static

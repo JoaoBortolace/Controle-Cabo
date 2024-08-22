@@ -1,6 +1,0 @@
-../BSP/Src/bsp_flash.c:16:19:BSP_Write_Flash_Byte	16	static
-../BSP/Src/bsp_flash.c:33:19:BSP_Write_Flash_HalfWord	16	static
-../BSP/Src/bsp_flash.c:49:19:BSP_Write_Flash_Word	16	static
-../BSP/Src/bsp_flash.c:65:9:BSP_Read_Flash_Byte	8	static
-../BSP/Src/bsp_flash.c:82:10:BSP_Read_Flash_HalfWord	8	static
-../BSP/Src/bsp_flash.c:99:10:BSP_Read_Flash_Word	8	static

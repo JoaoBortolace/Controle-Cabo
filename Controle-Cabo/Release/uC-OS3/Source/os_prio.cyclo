@@ -1,0 +1,4 @@
+../uC-OS3/Source/os_prio.c:48:7:OS_PrioInit	1
+../uC-OS3/Source/os_prio.c:78:10:OS_PrioGetHighest	1
+../uC-OS3/Source/os_prio.c:123:7:OS_PrioInsert	1
+../uC-OS3/Source/os_prio.c:161:7:OS_PrioRemove	1

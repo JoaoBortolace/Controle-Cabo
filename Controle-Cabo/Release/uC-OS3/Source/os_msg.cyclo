@@ -1,0 +1,5 @@
+../uC-OS3/Source/os_msg.c:54:7:OS_MsgPoolInit	5
+../uC-OS3/Source/os_msg.c:119:13:OS_MsgQFreeAll	2
+../uC-OS3/Source/os_msg.c:161:7:OS_MsgQInit	1
+../uC-OS3/Source/os_msg.c:198:8:OS_MsgQGet	3
+../uC-OS3/Source/os_msg.c:282:7:OS_MsgQPut	5
