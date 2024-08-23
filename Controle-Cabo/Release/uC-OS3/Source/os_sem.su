@@ -1,6 +1,6 @@
 ../uC-OS3/Source/os_sem.c:65:7:OSSemCreate	24	static
 ../uC-OS3/Source/os_sem.c:173:13:OSSemDel	24	static
-../uC-OS3/Source/os_sem.c:340:13:OSSemPend	24	static
+../uC-OS3/Source/os_sem.c:340:13:OSSemPend	32	static
 ../uC-OS3/Source/os_sem.c:562:13:OSSemPendAbort	32	static
 ../uC-OS3/Source/os_sem.c:687:13:OSSemPost	40	static
 ../uC-OS3/Source/os_sem.c:826:7:OSSemSet	16	static

@@ -5,7 +5,7 @@
 ../uC-OS3/Ports/ARM-Cortex-M/ARMv7-M/os_cpu_c.c:223:7:OSTaskDelHook	0	static
 ../uC-OS3/Ports/ARM-Cortex-M/ARMv7-M/os_cpu_c.c:248:7:OSTaskReturnHook	0	static
 ../uC-OS3/Ports/ARM-Cortex-M/ARMv7-M/os_cpu_c.c:438:11:OSTaskStkInit	8	static
-../uC-OS3/Ports/ARM-Cortex-M/ARMv7-M/os_cpu_c.c:493:7:OSTaskSwHook	4	static
+../uC-OS3/Ports/ARM-Cortex-M/ARMv7-M/os_cpu_c.c:493:7:OSTaskSwHook	8	static
 ../uC-OS3/Ports/ARM-Cortex-M/ARMv7-M/os_cpu_c.c:560:7:OSTimeTickHook	0	static
 ../uC-OS3/Ports/ARM-Cortex-M/ARMv7-M/os_cpu_c.c:583:7:OS_CPU_SysTickHandler	8	static
 ../uC-OS3/Ports/ARM-Cortex-M/ARMv7-M/os_cpu_c.c:612:7:OS_CPU_SysTickInitFreq	0	static

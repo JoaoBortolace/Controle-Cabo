@@ -1,0 +1,745 @@
+!SESSION 2024-08-22 16:01:37.145 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-08-22 16:02:01.466
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-22 16:02:01.468
+!MESSAGE Log4j2 initialized with config file C:\Users\borto\Documents\GitHub\Controle-Cabo\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-22 16:02:07.177
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 16:02:08.212
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 16:02:08.212
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 16:02:08.212
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY org.eclipse.core.resources 4 368 2024-08-22 16:02:08.222
+!MESSAGE Resource '/Controle-Cabo_STM32F407ZGT6' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/Controle-Cabo_STM32F407ZGT6' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:367)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:241)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:183)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:244)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:231)
+	at com.st.stm32cube.ide.mcu.converters.AbstractCubeIDEProjectConfigurator.openReadmeFile(AbstractCubeIDEProjectConfigurator.java:1008)
+	at com.st.stm32cube.ide.mcu.ide.ui.project.internal.MCUProjectImporter$3.run(MCUProjectImporter.java:387)
+	at org.eclipse.ui.internal.PendingSyncExec.run(PendingSyncExec.java:68)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:172)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4046)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-22 16:02:35.620
+!MESSAGE Indexed 'Controle-Cabo' (57 sources, 147 headers) in 6.99 sec: 16,094 declarations; 81,546 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.25%)
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 16:03:26.425
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 16:03:26.425
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 16:03:26.425
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 16:03:26.425
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 16:04:08.733
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 16:04:08.733
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 16:04:08.733
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 16:04:08.734
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-22 16:04:11.794
+!MESSAGE Indexed 'Controle-Cabo' (57 sources, 147 headers) in 3.94 sec: 15,889 declarations; 81,095 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.25%)
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 16:04:33.725
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 16:04:33.725
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 16:04:33.725
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 16:04:33.726
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 16:04:34.074
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 16:04:34.074
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 16:04:34.074
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 16:04:34.075
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2024-08-22 16:04:51.108
+!MESSAGE Error in final launch sequence:
+
+Failed to execute MI command:
+target remote localhost:2331
+
+Error message from debugger back end:
+localhost:2331: Connection timed out.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+target remote localhost:2331
+
+Error message from debugger back end:
+localhost:2331: Connection timed out.
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.Exception: localhost:2331: Connection timed out.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-08-22 16:04:51.108
+!MESSAGE Failed to execute MI command:
+target remote localhost:2331
+
+Error message from debugger back end:
+localhost:2331: Connection timed out.
+!STACK 0
+java.lang.Exception: localhost:2331: Connection timed out.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 16:05:15.145
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 16:05:15.145
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 16:05:15.145
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 16:05:15.146
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 16:05:15.477
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 16:05:15.477
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 16:05:15.477
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 16:05:15.477
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2024-08-22 16:05:32.829
+!MESSAGE Error in final launch sequence:
+
+Failed to execute MI command:
+target remote localhost:2331
+
+Error message from debugger back end:
+localhost:2331: Connection timed out.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+target remote localhost:2331
+
+Error message from debugger back end:
+localhost:2331: Connection timed out.
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.Exception: localhost:2331: Connection timed out.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-08-22 16:05:32.829
+!MESSAGE Failed to execute MI command:
+target remote localhost:2331
+
+Error message from debugger back end:
+localhost:2331: Connection timed out.
+!STACK 0
+java.lang.Exception: localhost:2331: Connection timed out.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 16:32:41.365
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 16:32:41.365
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 16:32:41.365
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 16:32:41.366
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 16:32:41.773
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 16:32:41.773
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 16:32:41.773
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 16:32:41.774
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2024-08-22 16:33:00.146
+!MESSAGE Error in final launch sequence:
+
+Failed to execute MI command:
+target remote localhost:2331
+
+Error message from debugger back end:
+localhost:2331: Connection timed out.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+target remote localhost:2331
+
+Error message from debugger back end:
+localhost:2331: Connection timed out.
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.Exception: localhost:2331: Connection timed out.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-08-22 16:33:00.146
+!MESSAGE Failed to execute MI command:
+target remote localhost:2331
+
+Error message from debugger back end:
+localhost:2331: Connection timed out.
+!STACK 0
+java.lang.Exception: localhost:2331: Connection timed out.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 16:33:02.892
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 16:33:02.892
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 16:33:02.892
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 16:33:02.893
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 16:33:03.193
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 16:33:03.193
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 16:33:03.193
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 16:33:03.194
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2024-08-22 16:33:20.764
+!MESSAGE Error in final launch sequence:
+
+Failed to execute MI command:
+target remote localhost:2331
+
+Error message from debugger back end:
+localhost:2331: Connection timed out.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+target remote localhost:2331
+
+Error message from debugger back end:
+localhost:2331: Connection timed out.
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.Exception: localhost:2331: Connection timed out.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-08-22 16:33:20.764
+!MESSAGE Failed to execute MI command:
+target remote localhost:2331
+
+Error message from debugger back end:
+localhost:2331: Connection timed out.
+!STACK 0
+java.lang.Exception: localhost:2331: Connection timed out.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 16:33:33.441
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 16:33:33.441
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 16:33:33.441
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 16:33:33.442
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 16:33:33.786
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 16:33:33.786
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 16:33:33.786
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 16:33:33.786
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 16:43:04.743
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 16:43:04.743
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 16:43:04.743
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 16:43:04.744
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 16:43:06.518
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 16:43:06.518
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 16:43:06.518
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 16:43:06.519
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 16:51:37.318
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 16:51:37.318
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 16:51:37.318
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 16:51:37.319
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 16:51:39.731
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 16:51:39.732
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 16:51:39.732
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 16:51:39.732
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 16:58:34.908
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 16:58:34.908
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 16:58:34.908
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 16:58:34.909
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 16:58:35.287
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 16:58:35.287
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 16:58:35.287
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 16:58:35.288
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 17:13:20.713
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 17:13:20.714
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 17:13:20.714
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 17:13:20.714
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 17:13:22.255
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 17:13:22.255
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 17:13:22.255
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 17:13:22.255
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2024-08-22 17:13:42.161
+!MESSAGE Error in final launch sequence:
+
+Failed to execute MI command:
+target remote localhost:2331
+
+Error message from debugger back end:
+localhost:2331: Connection timed out.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+target remote localhost:2331
+
+Error message from debugger back end:
+localhost:2331: Connection timed out.
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.Exception: localhost:2331: Connection timed out.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-08-22 17:13:42.161
+!MESSAGE Failed to execute MI command:
+target remote localhost:2331
+
+Error message from debugger back end:
+localhost:2331: Connection timed out.
+!STACK 0
+java.lang.Exception: localhost:2331: Connection timed out.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 17:15:02.382
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 17:15:02.382
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 17:15:02.382
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 17:15:02.384
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 17:15:03.895
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 17:15:03.895
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 17:15:03.895
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 17:15:03.895
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 17:18:15.578
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 17:18:15.578
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 17:18:15.578
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 17:18:15.579
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 17:18:17.221
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 17:18:17.221
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 17:18:17.221
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 17:18:17.221
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 17:24:54.345
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 17:24:54.345
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 17:24:54.345
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 17:24:54.345
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 17:24:55.818
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 17:24:55.818
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 17:24:55.818
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 17:24:55.819
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 17:26:56.401
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 17:26:56.401
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 17:26:56.401
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 17:26:56.402
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 17:27:13.697
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 17:27:13.697
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 17:27:13.697
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 17:27:13.697
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 17:27:14.039
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 17:27:14.039
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 17:27:14.039
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 17:27:14.039
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 17:52:41.286
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 17:52:41.286
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 17:52:41.286
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 17:52:41.287
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 17:52:42.726
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 17:52:42.726
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 17:52:42.726
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 17:52:42.727
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 17:56:34.000
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 17:56:34.000
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 17:56:34.000
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 17:56:34.000
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 17:56:34.356
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 17:56:34.356
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 17:56:34.356
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 17:56:34.357
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 17:56:58.790
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 17:56:58.790
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 17:56:58.790
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 17:56:58.790
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 17:56:59.094
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 17:56:59.094
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 17:56:59.094
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 17:56:59.094
+!MESSAGE Project is null
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-22 17:57:01.330
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 15 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-22 17:57:01.331
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-22 17:57:01.332
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 15 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-08-22 17:57:01.332
+!MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 20:29:14.159
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 20:29:14.159
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 20:29:14.159
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2024-08-22 20:29:14.159
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.ui 4 4 2024-08-22 20:29:14.199
+!MESSAGE Unable to create part
+!STACK 1
+org.eclipse.ui.PartInitException: Invalid Input: Must be project's active .ioc file.
+
+Project's 'Controle-Cabo' active one is 'Controle-Cabo.ioc' file
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor.init(CubeMxEditor.java:855)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:353)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:344)
+	at jdk.internal.reflect.GeneratedMethodAccessor94.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:976)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:938)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:138)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:385)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:311)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.lambda$0(PartServiceImpl.java:105)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4802)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:208)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:206)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:661)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:625)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:796)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:401)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1270)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3233)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$11(WorkbenchPage.java:3123)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3121)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3091)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3082)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:548)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:508)
+	at org.eclipse.ui.actions.OpenFileAction.openFile(OpenFileAction.java:103)
+	at org.eclipse.ui.actions.OpenSystemEditorAction.run(OpenSystemEditorAction.java:96)
+	at org.eclipse.ui.actions.RetargetAction.run(RetargetAction.java:215)
+	at org.eclipse.ui.navigator.CommonNavigatorManager$1.open(CommonNavigatorManager.java:184)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:800)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:797)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1115)
+	at org.eclipse.ui.navigator.CommonViewer.handleOpen(CommonViewer.java:452)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:296)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:331)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4071)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.ui 4 0 2024-08-22 20:29:14.200
+!MESSAGE Invalid Input: Must be project's active .ioc file.
+
+Project's 'Controle-Cabo' active one is 'Controle-Cabo.ioc' file
+
+!ENTRY org.eclipse.core.resources 4 77 2024-08-22 20:46:19.794
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-08-22 20:46:19.794
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-08-22 20:46:19.794
+!MESSAGE C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo overlaps the location of another project: 'Controle-Cabo'

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Controle-Cabo/Controle-Cabo_STM32F407ZGT6.ioc&apos; to &apos;Controle-Cabo.ioc&apos;" description="Rename resource &apos;Controle-Cabo_STM32F407ZGT6.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Controle-Cabo_STM32F407ZGT6.ioc" name="Controle-Cabo.ioc" stamp="1724369369112" updateReferences="true"/>
+</session>

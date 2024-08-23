@@ -30,8 +30,10 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 			if (HAL_GPIO_ReadPin(OPTO_2_GPIO_Port, OPTO_2_Pin) == OPTO_OFF) {
 				bobinaTick++;
 
-				if (bobinaTick > BOBINA_TICK_VOLTA) {
+				if (bobinaTick >= BOBINA_TICK_VOLTA) {
 					bobinaTick = 0;
+
+					carroTransversalTick = 0;
 					carroTransversalAndar = true;
 
 					OS_ERR err;
@@ -49,8 +51,10 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 			if (HAL_GPIO_ReadPin(OPTO_1_GPIO_Port, OPTO_1_Pin) == OPTO_OFF) {
 				bobinaTick--;
 
-				if (bobinaTick < -1*BOBINA_TICK_VOLTA) {
+				if (bobinaTick <= -1*BOBINA_TICK_VOLTA) {
 					bobinaTick = 0;
+
+					carroTransversalTick = 0;
 					carroTransversalAndar = true;
 
 					OS_ERR err;
@@ -68,7 +72,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 			carroTransversalTick++;
 
 			/* Assim que deu uma volta no eixo do carro transversal, mande o carro parar */
-			if (carroTransversalTick > CARRO_TRANSVERSAL_TICK_VOLTA) {
+			if (carroTransversalTick >= CARRO_TRANSVERSAL_TICK_VOLTA) {
 				carroTransversalTick = 0;
 				carroTransversalAndar = false;
 			}
@@ -101,7 +105,7 @@ static void carroTransversalTask(void *p_arg)
 	carroTransversalAndar = false;
 
 	OS_FLAGS comandoPrev = MOTOR_BOBINA_LIBERANDO;
-	CARRO_TRANSVERSAL_DIR carroDir = PARADO;
+	CARRO_TRANSVERSAL_DIR carroDir = ESQUERDA;
 
 	/* Infinite loop */
 	while (DEF_TRUE) {

@@ -1,7 +1,7 @@
 ../uC-OS3/Source/os_tmr.c:101:7:OSTmrCreate	48	static
 ../uC-OS3/Source/os_tmr.c:370:10:OSTmrRemainGet	32	static
 ../uC-OS3/Source/os_tmr.c:508:7:OSTmrSet	40	static
-../uC-OS3/Source/os_tmr.c:749:11:OSTmrStateGet	32	static
+../uC-OS3/Source/os_tmr.c:749:11:OSTmrStateGet	40	static
 ../uC-OS3/Source/os_tmr.c:991:7:OS_TmrClr	0	static
 ../uC-OS3/Source/os_tmr.c:1091:7:OS_TmrInit	56	static
 ../uC-OS3/Source/os_tmr.c:1175:6:OS_TmrLink	32	static

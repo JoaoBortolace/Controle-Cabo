@@ -93,7 +93,7 @@
   */
 __IO uint32_t uwTick;
 uint32_t uwTickPrio   = (1UL << __NVIC_PRIO_BITS); /* Invalid PRIO */
-HAL_TickFreqTypeDef uwTickFreq = HAL_TICK_FREQ_DEFAULT;  /* 100Hz */
+HAL_TickFreqTypeDef uwTickFreq = HAL_TICK_FREQ_DEFAULT;  /* 1KHz */
 /**
   * @}
   */
@@ -172,7 +172,7 @@ HAL_StatusTypeDef HAL_Init(void)
   /* Set Interrupt Group Priority */
   HAL_NVIC_SetPriorityGrouping(NVIC_PRIORITYGROUP_4);
 
-  /* Use systick as time base source and configure 10ms tick (default clock after Reset is HSI) */
+  /* Use systick as time base source and configure 1ms tick (default clock after Reset is HSI) */
   HAL_InitTick(TICK_INT_PRIORITY);
 
   /* Init the low level hardware */
@@ -252,7 +252,7 @@ __weak void HAL_MspDeInit(void)
   */
 __weak HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
 {
-  /* Configure the SysTick to have interrupt in 10ms time basis*/
+  /* Configure the SysTick to have interrupt in 1ms time basis*/
   if (HAL_SYSTICK_Config(SystemCoreClock / (1000U / uwTickFreq)) > 0U)
   {
     return HAL_ERROR;

@@ -1,6 +1,6 @@
-../App/Src/carroTransversal.c:229:13:carroTransversalSetDuty	4
-../App/Src/carroTransversal.c:203:13:carroTransversalDir	4
-../App/Src/carroTransversal.c:189:13:carroTransversalHome	3
-../App/Src/carroTransversal.c:84:13:carroTransversalTask	8
-../App/Src/carroTransversal.c:26:6:HAL_GPIO_EXTI_Callback	9
-../App/Src/carroTransversal.c:164:6:carroTransversalCreateTask	2
+../App/Src/carroTransversal.c:248:13:carroTransversalSetDuty	4
+../App/Src/carroTransversal.c:222:13:carroTransversalDir	4
+../App/Src/carroTransversal.c:208:13:carroTransversalHome	3
+../App/Src/carroTransversal.c:103:13:carroTransversalTask	8
+../App/Src/carroTransversal.c:29:6:HAL_GPIO_EXTI_Callback	13
+../App/Src/carroTransversal.c:183:6:carroTransversalCreateTask	2

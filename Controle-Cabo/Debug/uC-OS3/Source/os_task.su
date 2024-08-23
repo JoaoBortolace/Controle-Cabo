@@ -1,6 +1,6 @@
 ../uC-OS3/Source/os_task.c:665:13:OSTaskQFlush	16	static
 ../uC-OS3/Source/os_task.c:754:8:OSTaskQPend	32	static
-../uC-OS3/Source/os_task.c:950:14:OSTaskQPendAbort	24	static
+../uC-OS3/Source/os_task.c:950:14:OSTaskQPendAbort	32	static
 ../uC-OS3/Source/os_task.c:1067:7:OSTaskQPost	40	static
 ../uC-OS3/Source/os_task.c:1199:9:OSTaskRegGet	16	static
 ../uC-OS3/Source/os_task.c:1254:12:OSTaskRegGetID	16	static
@@ -17,7 +17,7 @@
 ../uC-OS3/Source/os_task.c:2398:7:OS_TaskDbgListRemove	0	static
 ../uC-OS3/Source/os_task.c:2445:7:OS_TaskInit	0	static
 ../uC-OS3/Source/os_task.c:2475:7:OS_TaskInitTCB	16	static
-../uC-OS3/Source/os_task.c:223:7:OSTaskCreate	56	static
+../uC-OS3/Source/os_task.c:223:7:OSTaskCreate	48	static
 ../uC-OS3/Source/os_task.c:2760:7:OS_TaskChangePrio	16	static
 ../uC-OS3/Source/os_task.c:62:7:OSTaskChangePrio	24	static
 ../uC-OS3/Source/os_task.c:483:7:OSTaskDel	24	static

@@ -3,10 +3,10 @@
 ../uC-OS3/Source/os_core.c:263:7:OSIntEnter	3
 ../uC-OS3/Source/os_core.c:299:7:OSIntExit	6
 ../uC-OS3/Source/os_core.c:430:7:OSSched	4
-../uC-OS3/Source/os_core.c:540:7:OSSchedLock	3
-../uC-OS3/Source/os_core.c:601:7:OSSchedUnlock	4
+../uC-OS3/Source/os_core.c:540:7:OSSchedLock	4
+../uC-OS3/Source/os_core.c:601:7:OSSchedUnlock	5
 ../uC-OS3/Source/os_core.c:670:7:OSSchedRoundRobinCfg	2
-../uC-OS3/Source/os_core.c:724:7:OSSchedRoundRobinYield	6
+../uC-OS3/Source/os_core.c:724:7:OSSchedRoundRobinYield	7
 ../uC-OS3/Source/os_core.c:806:7:OSStart	4
 ../uC-OS3/Source/os_core.c:871:13:OSVersion	1
 ../uC-OS3/Source/os_core.c:949:7:OS_IdleTaskInit	1

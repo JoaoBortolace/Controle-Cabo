@@ -59,8 +59,10 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 #define MOTOR_POLIA_EN_GPIO_Port 							GPIOE
 #define MOTOR_POLIA_DIR_Pin 								GPIO_PIN_11
 #define MOTOR_POLIA_DIR_GPIO_Port 							GPIOE
-#define MOTOR_POLIA_TENSAO_Pin 								GPIO_PIN_0
-#define MOTOR_POLIA_TENSAO_GPIO_Port 						GPIOC
+#define MOTOR_POLIA_TENSAO1_Pin 							GPIO_PIN_6
+#define MOTOR_POLIA_TENSAO1_GPIO_Port 						GPIOF
+#define MOTOR_POLIA_TENSAO2_Pin 							GPIO_PIN_7
+#define MOTOR_POLIA_TENSAO2_GPIO_Port 						GPIOF
 #define MOTOR_POLIA_VEL_Pin 								GPIO_PIN_5
 #define MOTOR_POLIA_VEL_GPIO_Port 							GPIOA
 #define MOTOR_POLIA_VEL_DAC_CHANNEL 						DAC_CHANNEL_2

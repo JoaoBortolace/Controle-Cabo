@@ -26,7 +26,9 @@ void MX_TIM2_Init(void);
 
 /* Exported Handlers ---------------------------------------------------------*/
 extern ADC_HandleTypeDef hadc2;
+extern ADC_HandleTypeDef hadc3;
 extern DMA_HandleTypeDef hdma_adc2;
+extern DMA_HandleTypeDef hdma_adc3;
 
 extern DAC_HandleTypeDef hdac;
 extern DMA_HandleTypeDef hdma_dac1;
