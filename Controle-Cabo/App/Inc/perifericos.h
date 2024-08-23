@@ -20,6 +20,7 @@ void SystemClock_Config(void);
 void MX_GPIO_Init(void);
 void MX_DMA_Init(void);
 void MX_ADC2_Init(void);
+void MX_ADC3_Init(void);
 void MX_DAC_Init(void);
 void MX_TIM1_Init(void);
 void MX_TIM2_Init(void);

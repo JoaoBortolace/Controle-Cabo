@@ -1,6 +1,6 @@
-../App/Src/carroTransversal.c:248:13:carroTransversalSetDuty	0	static
-../App/Src/carroTransversal.c:222:13:carroTransversalDir	8	static
-../App/Src/carroTransversal.c:208:13:carroTransversalHome	8	static
-../App/Src/carroTransversal.c:103:13:carroTransversalTask	40	static
-../App/Src/carroTransversal.c:29:6:HAL_GPIO_EXTI_Callback	16	static,ignoring_inline_asm
-../App/Src/carroTransversal.c:183:6:carroTransversalCreateTask	56	static
+../App/Src/carroTransversal.c:233:13:carroTransversalSetDuty	0	static
+../App/Src/carroTransversal.c:207:13:carroTransversalDir	8	static
+../App/Src/carroTransversal.c:193:13:carroTransversalHome	8	static
+../App/Src/carroTransversal.c:88:13:carroTransversalTask	40	static
+../App/Src/carroTransversal.c:26:6:HAL_GPIO_EXTI_Callback	16	static,ignoring_inline_asm
+../App/Src/carroTransversal.c:168:6:carroTransversalCreateTask	56	static

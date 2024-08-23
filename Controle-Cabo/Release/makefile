@@ -47,34 +47,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := Controle-Cabo
+BUILD_ARTIFACT_NAME := Controle-Cabo_STM32F407ZGT6
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-Controle-Cabo.elf \
+Controle-Cabo_STM32F407ZGT6.elf \
 
 MAP_FILES += \
-Controle-Cabo.map \
+Controle-Cabo_STM32F407ZGT6.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-Controle-Cabo.list \
+Controle-Cabo_STM32F407ZGT6.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: Controle-Cabo.elf secondary-outputs
+main-build: Controle-Cabo_STM32F407ZGT6.elf secondary-outputs
 
 # Tool invocations
-Controle-Cabo.elf Controle-Cabo.map: $(OBJS) $(USER_OBJS) C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo\System\STM32F407ZGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Controle-Cabo.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\borto\Documents\GitHub\Controle-Cabo\Controle-Cabo\System\STM32F407ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Controle-Cabo.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Controle-Cabo_STM32F407ZGT6.elf Controle-Cabo_STM32F407ZGT6.map: $(OBJS) $(USER_OBJS) C:\Controle-Cabo\Controle-Cabo\Controle-Cabo\Controle-Cabo\System\STM32F407ZGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Controle-Cabo_STM32F407ZGT6.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Controle-Cabo\Controle-Cabo\Controle-Cabo\Controle-Cabo\System\STM32F407ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Controle-Cabo_STM32F407ZGT6.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -83,14 +83,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-Controle-Cabo.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "Controle-Cabo.list"
+Controle-Cabo_STM32F407ZGT6.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "Controle-Cabo_STM32F407ZGT6.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) Controle-Cabo.elf Controle-Cabo.list Controle-Cabo.map default.size.stdout
+	-$(RM) Controle-Cabo_STM32F407ZGT6.elf Controle-Cabo_STM32F407ZGT6.list Controle-Cabo_STM32F407ZGT6.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

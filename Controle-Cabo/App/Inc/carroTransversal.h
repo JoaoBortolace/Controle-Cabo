@@ -19,8 +19,8 @@ extern "C"
 
 /* Private define ------------------------------------------------------------*/
 #define BOBINA_TICK_VOLTA						(8)
-#define CARRO_TRANSVERSAL_TICK_VOLTA			(15u)
-#define CARRO_TRANSVERSAL_DESACELERA			(10u)
+#define CARRO_TRANSVERSAL_TICK_VOLTA			(18u)
+#define CARRO_TRANSVERSAL_DESACELERA			(13u)
 
 #define HOME_TIMEOUT	25000000
 
